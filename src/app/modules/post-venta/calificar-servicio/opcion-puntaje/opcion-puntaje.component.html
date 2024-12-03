@@ -1,0 +1,21 @@
+<div *ngIf="scoreList" class="mapping-container">
+    <div *ngFor="let score of scoreList; let i = index" class="score-container">
+        <div class="score-square" [class.selected]="selectedScore === score.number"
+            (click)="setCurrentScore(score.number)"
+            (mouseenter)="showTextFor(score.number)"
+            (mouseleave)="hideTextFor(score.number)">
+            {{ score.number }}
+        </div>
+        <div *ngIf="(showFirstAndLast && (i === 0 || i === scoreList.length - 1)) || 
+              score.number === hoveredScore || 
+              score.number === selectedScore" 
+              class="score-text">
+            {{ score.text }}
+        </div>
+    </div>
+</div>
+<div class="container input-container">
+    <textarea class="square-input" placeholder="Contanos tu experiencia"></textarea>
+    <button class="btn-enviar" (click)="sendMock()">ENVIAR</button>
+</div>
+

@@ -1,0 +1,63 @@
+.footer-container{
+    text-align: center;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    border-radius: 6vw;
+    width: 40vw;
+    height: 4vh;
+}
+.btn-wpp{
+    border-color: green;
+}
+.btn-maps{
+    border-color: grey;
+}
+.img{
+    width: 3vw;
+    margin-right: 5px;
+}
+.nombre{
+    font-size: 4vw;
+}
+.direccion{
+    font-size: 3vw;
+}
+.telefono{
+    font-size: 3vw;
+    margin-bottom: 0px;
+}
+.email{
+    font-size: 3vw;
+    margin-bottom: 0px;
+}
+.flex-row-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+@media (min-width: 1280px) {
+    .nombre{
+        font-size: 1vw;
+    }
+    .direccion{
+        font-size: 0.7vw;
+    }
+    .telefono{
+        font-size: 0.7vw;
+    }
+    .email{
+        font-size: 0.7vw;
+    }
+    .btn{
+        width: 20vw;
+    }
+    .img{
+        width: 1vw;
+    }
+}

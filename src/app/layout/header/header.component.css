@@ -1,0 +1,20 @@
+.header-container{
+    margin-top: 5vh;
+    text-align: center;
+}
+.title{
+    font-size: 3vw;
+}
+
+.custom-hr {
+    border: none;
+    height: 5px; 
+    background-color: lightgray;
+    margin: 20px 0;
+  }
+
+@media (min-width: 1280px) {
+    .title{
+        font-size: 1.5vw; 
+    }
+}

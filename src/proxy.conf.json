@@ -1,0 +1,8 @@
+{
+    "/api": {
+      "target": "https://dev.tecnomcrm.com",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }

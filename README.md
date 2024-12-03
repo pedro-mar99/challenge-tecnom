@@ -1,27 +1,33 @@
 # Boxes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
 
-## Development server
+## Características
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Responsivo**: Para dispositivos móviles y pantallas de escritorio.
+- **Modularidad**: Componentes y servicios organizados por módulos.
+- **Enrutamiento**: Dividido en rutas internas (internal.routes) y para APIs externas (api.routes).
+- **Lazy Loading**: Para mejorar el rendimiento (no considero necesario para el tipo de proyecto, sin embargo es buena práctica aplicarlo).
+- **Skeleton Loading**: Se generó un componente Skeleton que contemple aquellas partes de la vista que se repiten para mantener el código mas limpio.
+- **Patrones de Diseño**: Se implementó *Publish and Subscribe* por ejemplo, para manejo de eventos por medio de Observables.
+- **Principios SOLID**: Se tuvieron en cuenta a la hora de generar los distintos componentes.
 
-## Code scaffolding
+## Arquitectura
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+El proyecto sigue una estructura modular:
 
-## Build
+- **src/app**: Contiene todos módulos, componentes, servicios, constantes, etc.
+  - `data/`: Servicios, interfaces y enrutamiento.
+  - `layout/`: Componentes que representan el esqueleto del proyecto.
+  - `modules/`: Componentes principales.
+- **assets/**: Contiene los iconos.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Responsividad
 
-## Running unit tests
+Se hizo foco en un diseño enfocado a dispositivos móbiles, ya que las capturas de pantalla tenian ese formato.
+Sin embargo, se tuvo en cuenta el aumento de tamaño de los elementos para pantallas de escritorio.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Aclaraciones
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Se agrego el archivo *proxy.config.json* dentro de */src* ya que tuve problemas para conectarme a la api, especificamente, problemas de CORS Policy.
+- Para las respuestas de la api que devolvian valores nulos, se agrego en algunos casos, *desconocido*, para al menos rellenar el espacio.

@@ -1,0 +1,8 @@
+
+<app-skeleton>
+    <div class="component-container">
+        <p class="encabezado">Hola Nicolás, gracias por confiar en nosotros.</p>
+        <p class="pregunta">{{this.encuesta?.pregunta ?? 'Pregunta desconocida'}}</p>
+        <app-opcion-puntaje [mapping]="this.encuesta?.mapping" ></app-opcion-puntaje>
+    </div>
+</app-skeleton>

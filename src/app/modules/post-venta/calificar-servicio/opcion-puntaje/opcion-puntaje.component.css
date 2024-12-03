@@ -1,0 +1,125 @@
+.mapping-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 5vh 0vh 1vh 0vh;
+    height: 10vh;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 16vw;
+}
+
+.score-square {
+    width: 7vw;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #e8e8e8;
+    color: rgb(183, 182, 182);
+    font-size: 3vw;
+}
+
+.score-square.selected,
+.score-square:hover {
+    background-color: #31b6e6;
+    color: white;
+    border-color: #31b6e6;
+}
+
+.score-text {
+    font-size: 2.5vw;
+    margin-top: 5px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 16vw;
+    text-align: center;
+    word-wrap: break-word;
+    display: block;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+.square-input {
+    width: 100%;
+    max-width: 130vw;
+    height: 20vh;
+    padding: 10px;
+    font-size: 2vw;
+    text-align: left;
+    border-radius: 5px;
+    border-color: rgb(183, 182, 182);
+    background-color: #e8e8e8;
+    margin-bottom: 2vh;
+}
+
+.btn-enviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, darkred, deeppink);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6vw;
+    font-size: 4vw;
+    cursor: pointer;
+    width: 100%;
+    height: 6vh;
+    text-align: center;
+    transition: background-image 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-image: linear-gradient(to right, rgb(105, 0, 0), rgb(196, 15, 111)); 
+}
+
+@media (min-width: 630px) {
+    .mapping-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 5vh 0vh 1vh 0vh;
+        height: 20vh;
+    }
+}
+
+@media (min-width: 1280px) {
+    .btn-enviar {
+        width: 100%;
+        max-width: 25vw;
+        font-size: 2vw;
+    }
+    .mapping-container {
+        height: 16vh;
+    }
+    .score-text{
+        font-size:1.5vw;
+    }
+    .square-input{
+        font-size: 1vw;
+        width: 40vw;
+    }
+    .score-square{
+        width: 5vw;
+        height: 5vw;
+    }
+    .mapping-container{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
+

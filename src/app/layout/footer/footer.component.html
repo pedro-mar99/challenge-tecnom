@@ -1,0 +1,22 @@
+<div class="container-fluid footer-container">
+    <p class="nombre">{{this.selectedWorkShop?.name ?? 'Nombre desconocido'}}</p>
+    <p class="direccion"><b>{{this.selectedWorkShop?.formatted_address ?? 'Dirección desconocida'}}</b></p>
+    <div class="btn-container">
+        <button class="btn btn-wpp flex-row-container">
+            <img class="img" src="../../../assets/icons/whatsapp-logo.svg" alt="">
+            WhatsApp
+        </button>
+        <button class="btn btn-maps flex-row-container">
+            <img class="img" src="../../../assets/icons/maps-icon.png" alt="">
+            Ver en mapa
+        </button>
+    </div>
+    <div class="flex-row-container">
+        <img class="img" src="../../../assets/icons/phone.png" alt="">
+        <p class="telefono">{{this.selectedWorkShop?.phone  ?? 'Teléfono desconocido'}}</p>
+    </div>
+    <div class="flex-row-container">
+        <img class="img" src="../../../assets/icons/mail.png" alt="">
+        <p class="email">{{(this.selectedWorkShop?.email | lowercase)  ?? 'Email desconocido'}}</p>
+    </div>
+</div>
