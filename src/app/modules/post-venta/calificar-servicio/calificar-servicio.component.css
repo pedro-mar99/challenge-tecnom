@@ -11,6 +11,18 @@
     margin-bottom: 0px;
 }
 
+@media (min-width: 680px) {
+    .encabezado{
+        font-size: 2vw;
+        margin-bottom: 0px;
+    }
+    .pregunta{
+        text-align: center;
+        font-size: 2vw;
+        margin-bottom: 0px;
+    }
+}
+
 @media (min-width: 1280px) {
     .encabezado{
         font-size: 1vw;

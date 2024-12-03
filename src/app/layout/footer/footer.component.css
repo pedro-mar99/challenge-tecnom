@@ -41,18 +41,39 @@
     margin-top: 1vh;
 }
 
+@media (min-width: 680px) {
+    .nombre{
+        font-size: 2vw;
+    }
+    .direccion{
+        font-size: 1vw;
+    }
+    .telefono{
+        font-size: 1vw;
+    }
+    .email{
+        font-size: 1vw;
+    }
+    .btn{
+        width: 20vw;
+    }
+    .img{
+        width: 1vw;
+    }
+}
+
 @media (min-width: 1280px) {
     .nombre{
         font-size: 1vw;
     }
     .direccion{
-        font-size: 0.7vw;
+        font-size: 0.9vw;
     }
     .telefono{
-        font-size: 0.7vw;
+        font-size: 0.9vw;
     }
     .email{
-        font-size: 0.7vw;
+        font-size: 0.9vw;
     }
     .btn{
         width: 20vw;
