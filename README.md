@@ -24,7 +24,7 @@ El proyecto sigue una estructura modular:
 
 ## Responsividad
 
-Se hizo foco en un diseño enfocado a dispositivos móbiles, ya que las capturas de pantalla tenian ese formato.
+Se hizo foco en un diseño para dispositivos móbiles, ya que las capturas de pantalla tenian ese formato.
 Sin embargo, se tuvo en cuenta el aumento de tamaño de los elementos para pantallas de escritorio.
 
 ## Aclaraciones
