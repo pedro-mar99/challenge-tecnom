@@ -32,7 +32,7 @@ export class CalificarServicioComponent implements OnInit {
 
   getEncuesta() {
     this.encuestaService.getEncuestas().subscribe((response) => {
-      this.encuesta = response
+      this.encuesta = response //Consultamos encuesta
     });
   }
 }

@@ -9,7 +9,7 @@ export class MockApiService {
 
   constructor() { }
 
-  saveResponse(data: any) {
+  saveResponse(data: any) { //Simulamos guardar respuesta en API
     this.response.push(data);
     console.log("Respuestas guardadas", this.response)
     return of(true);

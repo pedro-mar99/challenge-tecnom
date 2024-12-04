@@ -11,8 +11,8 @@ export class WorkShopService {
 
   constructor(private http: HttpClient) { }
 
-  private workShopSubject = new BehaviorSubject<WorkShop | null>(null)
-  currentWorkShop$ = this.workShopSubject.asObservable();
+  private workShopSubject = new BehaviorSubject<WorkShop | null>(null) //Creamos un observable para consultar el workshop actual
+  currentWorkShop$ = this.workShopSubject.asObservable();             //desde cualquier componente
   
   public setWorkShop(newWorkShop: WorkShop){
     this.workShopSubject.next(newWorkShop);
